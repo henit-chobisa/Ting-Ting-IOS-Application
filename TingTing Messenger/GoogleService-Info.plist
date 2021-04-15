@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>166919780492-g8n012a9crecb62n2dkh4hfi03mhvt51.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.166919780492-g8n012a9crecb62n2dkh4hfi03mhvt51</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmgMhRKx-nCwEm5Jok8K7-QHEyfg6lH4I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>166919780492</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.henit-chobisa.TingTing-Messenger</string>
+	<key>PROJECT_ID</key>
+	<string>ting-ting-messenger</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ting-ting-messenger.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:166919780492:ios:81ccd834d65e6b369523a9</string>
+</dict>
+</plist>

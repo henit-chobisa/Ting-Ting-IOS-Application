@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		127FB11E166FE3E563F7282D /* Pods_TingTing_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6871ED54A881ABEA765EA1FE /* Pods_TingTing_Messenger.framework */; };
+		1D523A382628BA2B00997F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D523A372628BA2B00997F47 /* AppDelegate.swift */; };
+		1D523A3A2628BA2B00997F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D523A392628BA2B00997F47 /* SceneDelegate.swift */; };
+		1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D523A3B2628BA2B00997F47 /* ViewController.swift */; };
+		1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A3D2628BA2B00997F47 /* Main.storyboard */; };
+		1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A402628BA2D00997F47 /* Assets.xcassets */; };
+		1D523A442628BA2D00997F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */; };
+		1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D45D2628C38200125988 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		164D8B92496B6F182C085A4D /* Pods-TingTing Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TingTing Messenger.debug.xcconfig"; path = "Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger.debug.xcconfig"; sourceTree = "<group>"; };
+		1D523A342628BA2B00997F47 /* TingTing Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TingTing Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D523A372628BA2B00997F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D523A392628BA2B00997F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D523A3B2628BA2B00997F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D523A3E2628BA2B00997F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D523A402628BA2D00997F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D523A432628BA2D00997F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D523A452628BA2D00997F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE0D45D2628C38200125988 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		541F91BC73647650C75B2CF8 /* Pods-TingTing Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TingTing Messenger.release.xcconfig"; path = "Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger.release.xcconfig"; sourceTree = "<group>"; };
+		6871ED54A881ABEA765EA1FE /* Pods_TingTing_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TingTing_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D523A312628BA2B00997F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				127FB11E166FE3E563F7282D /* Pods_TingTing_Messenger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11AF6E79601EB32ED9E50DD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				164D8B92496B6F182C085A4D /* Pods-TingTing Messenger.debug.xcconfig */,
+				541F91BC73647650C75B2CF8 /* Pods-TingTing Messenger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1D523A2B2628BA2B00997F47 = {
+			isa = PBXGroup;
+			children = (
+				1D523A362628BA2B00997F47 /* TingTing Messenger */,
+				1D523A352628BA2B00997F47 /* Products */,
+				11AF6E79601EB32ED9E50DD2 /* Pods */,
+				A0D410A6EAC37188A3B4036E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D523A352628BA2B00997F47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D523A342628BA2B00997F47 /* TingTing Messenger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D523A362628BA2B00997F47 /* TingTing Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				1D523A372628BA2B00997F47 /* AppDelegate.swift */,
+				1D523A392628BA2B00997F47 /* SceneDelegate.swift */,
+				1D523A3B2628BA2B00997F47 /* ViewController.swift */,
+				1D523A3D2628BA2B00997F47 /* Main.storyboard */,
+				1DE0D45D2628C38200125988 /* GoogleService-Info.plist */,
+				1D523A402628BA2D00997F47 /* Assets.xcassets */,
+				1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */,
+				1D523A452628BA2D00997F47 /* Info.plist */,
+			);
+			path = "TingTing Messenger";
+			sourceTree = "<group>";
+		};
+		A0D410A6EAC37188A3B4036E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6871ED54A881ABEA765EA1FE /* Pods_TingTing_Messenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D523A332628BA2B00997F47 /* TingTing Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D523A482628BA2D00997F47 /* Build configuration list for PBXNativeTarget "TingTing Messenger" */;
+			buildPhases = (
+				2BA9FC60F1C3B39AED82FFF8 /* [CP] Check Pods Manifest.lock */,
+				1D523A302628BA2B00997F47 /* Sources */,
+				1D523A312628BA2B00997F47 /* Frameworks */,
+				1D523A322628BA2B00997F47 /* Resources */,
+				87D39077378B36E97EDABB61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TingTing Messenger";
+			productName = "TingTing Messenger";
+			productReference = 1D523A342628BA2B00997F47 /* TingTing Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D523A2C2628BA2B00997F47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1D523A332628BA2B00997F47 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1D523A2F2628BA2B00997F47 /* Build configuration list for PBXProject "TingTing Messenger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D523A2B2628BA2B00997F47;
+			productRefGroup = 1D523A352628BA2B00997F47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D523A332628BA2B00997F47 /* TingTing Messenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D523A322628BA2B00997F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D523A442628BA2D00997F47 /* LaunchScreen.storyboard in Resources */,
+				1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */,
+				1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */,
+				1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BA9FC60F1C3B39AED82FFF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TingTing Messenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D39077378B36E97EDABB61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D523A302628BA2B00997F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */,
+				1D523A382628BA2B00997F47 /* AppDelegate.swift in Sources */,
+				1D523A3A2628BA2B00997F47 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D523A3D2628BA2B00997F47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D523A3E2628BA2B00997F47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D523A432628BA2D00997F47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D523A462628BA2D00997F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D523A472628BA2D00997F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D523A492628BA2D00997F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164D8B92496B6F182C085A4D /* Pods-TingTing Messenger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LTT23YW2Z9;
+				INFOPLIST_FILE = "TingTing Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henit-chobisa.TingTing-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D523A4A2628BA2D00997F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541F91BC73647650C75B2CF8 /* Pods-TingTing Messenger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LTT23YW2Z9;
+				INFOPLIST_FILE = "TingTing Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henit-chobisa.TingTing-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D523A2F2628BA2B00997F47 /* Build configuration list for PBXProject "TingTing Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D523A462628BA2D00997F47 /* Debug */,
+				1D523A472628BA2D00997F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D523A482628BA2D00997F47 /* Build configuration list for PBXNativeTarget "TingTing Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D523A492628BA2D00997F47 /* Debug */,
+				1D523A4A2628BA2D00997F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D523A2C2628BA2B00997F47 /* Project object */;
+}

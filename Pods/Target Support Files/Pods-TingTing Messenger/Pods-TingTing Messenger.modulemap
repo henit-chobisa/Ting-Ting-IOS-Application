@@ -1,0 +1,6 @@
+framework module Pods_TingTing_Messenger {
+  umbrella header "Pods-TingTing Messenger-umbrella.h"
+
+  export *
+  module * { export * }
+}
