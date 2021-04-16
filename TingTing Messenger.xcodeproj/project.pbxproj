@@ -13,6 +13,13 @@
 		1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D523A3B2628BA2B00997F47 /* ViewController.swift */; };
 		1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A3D2628BA2B00997F47 /* Main.storyboard */; };
 		1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A402628BA2D00997F47 /* Assets.xcassets */; };
+		1D7045B12629F03400AE311B /* happy_cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7045B02629F03400AE311B /* happy_cat.json */; };
+		1D7045B42629F1E800AE311B /* back_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7045B32629F1E800AE311B /* back_button.json */; };
+		1D7045B72629F22B00AE311B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7045B62629F22B00AE311B /* RegisterViewController.swift */; };
+		1D7045BA262A107000AE311B /* ProfileInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */; };
+		1DBBCC0D262A1EC900914D4D /* google.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0A262A1EC800914D4D /* google.json */; };
+		1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0B262A1EC900914D4D /* appleLogo.json */; };
+		1DBBCC0F262A1EC900914D4D /* facebook.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0C262A1EC900914D4D /* facebook.json */; };
 		1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D45D2628C38200125988 /* GoogleService-Info.plist */; };
 		1DE0D4632628C4F000125988 /* App Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4622628C4F000125988 /* App Logo.json */; };
 		1DE0D4662628C5B700125988 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4652628C5B700125988 /* heart.json */; };
@@ -35,6 +42,13 @@
 		1D523A3E2628BA2B00997F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D523A402628BA2D00997F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D523A452628BA2D00997F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7045B02629F03400AE311B /* happy_cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = happy_cat.json; path = "JSON assets/happy_cat.json"; sourceTree = SOURCE_ROOT; };
+		1D7045B32629F1E800AE311B /* back_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = back_button.json; path = "JSON assets/back_button.json"; sourceTree = SOURCE_ROOT; };
+		1D7045B62629F22B00AE311B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationViewController.swift; sourceTree = "<group>"; };
+		1DBBCC0A262A1EC800914D4D /* google.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = google.json; path = "JSON assets/google.json"; sourceTree = SOURCE_ROOT; };
+		1DBBCC0B262A1EC900914D4D /* appleLogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = appleLogo.json; path = "JSON assets/appleLogo.json"; sourceTree = SOURCE_ROOT; };
+		1DBBCC0C262A1EC900914D4D /* facebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = facebook.json; path = "JSON assets/facebook.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D45D2628C38200125988 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DE0D4622628C4F000125988 /* App Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "App Logo.json"; path = "TingTing Messenger/JSON files/App Logo.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D4652628C5B700125988 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heart.json; path = "TingTing Messenger/JSON files/heart.json"; sourceTree = SOURCE_ROOT; };
@@ -101,6 +115,8 @@
 				1D523A402628BA2D00997F47 /* Assets.xcassets */,
 				1D523A452628BA2D00997F47 /* Info.plist */,
 				1DE0D46B2628CB1900125988 /* SignViewController.swift */,
+				1D7045B62629F22B00AE311B /* RegisterViewController.swift */,
+				1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */,
 			);
 			path = "TingTing Messenger";
 			sourceTree = "<group>";
@@ -108,6 +124,11 @@
 		1DE0D46E2628CD9400125988 /* JSON files */ = {
 			isa = PBXGroup;
 			children = (
+				1DBBCC0B262A1EC900914D4D /* appleLogo.json */,
+				1DBBCC0C262A1EC900914D4D /* facebook.json */,
+				1DBBCC0A262A1EC800914D4D /* google.json */,
+				1D7045B32629F1E800AE311B /* back_button.json */,
+				1D7045B02629F03400AE311B /* happy_cat.json */,
 				1DE0D47D2628E8BC00125988 /* dogFromBox.json */,
 				1DE0D47A2628DE6200125988 /* friends.json */,
 				1DE0D4772628D8F700125988 /* doggy.json */,
@@ -188,14 +209,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7045B42629F1E800AE311B /* back_button.json in Resources */,
+				1DBBCC0D262A1EC900914D4D /* google.json in Resources */,
 				1DE0D4782628D8F700125988 /* doggy.json in Resources */,
+				1D7045B12629F03400AE311B /* happy_cat.json in Resources */,
 				1DE0D4712628CDD000125988 /* bunny.json in Resources */,
 				1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */,
 				1DE0D4752628D53E00125988 /* cat.json in Resources */,
 				1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */,
 				1DE0D4722628CDD000125988 /* signupBackground.json in Resources */,
+				1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */,
 				1DE0D47E2628E8BC00125988 /* dogFromBox.json in Resources */,
 				1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */,
+				1DBBCC0F262A1EC900914D4D /* facebook.json in Resources */,
 				1DE0D4692628C98300125988 /* pigeon.json in Resources */,
 				1DE0D4662628C5B700125988 /* heart.json in Resources */,
 				1DE0D4632628C4F000125988 /* App Logo.json in Resources */,
@@ -253,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */,
+				1D7045B72629F22B00AE311B /* RegisterViewController.swift in Sources */,
 				1D523A382628BA2B00997F47 /* AppDelegate.swift in Sources */,
+				1D7045BA262A107000AE311B /* ProfileInformationViewController.swift in Sources */,
 				1D523A3A2628BA2B00997F47 /* SceneDelegate.swift in Sources */,
 				1DE0D46C2628CB1900125988 /* SignViewController.swift in Sources */,
 			);

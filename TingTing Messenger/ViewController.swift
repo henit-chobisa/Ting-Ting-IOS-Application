@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -27,6 +28,9 @@ class ViewController: UIViewController {
         pigeonView.loopMode = .loop
         pigeonView.contentMode = .scaleAspectFill
         pigeonView.play()
+        
+
+        
         
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
