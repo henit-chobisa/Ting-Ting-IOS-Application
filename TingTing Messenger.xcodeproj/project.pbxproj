@@ -13,8 +13,17 @@
 		1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D523A3B2628BA2B00997F47 /* ViewController.swift */; };
 		1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A3D2628BA2B00997F47 /* Main.storyboard */; };
 		1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A402628BA2D00997F47 /* Assets.xcassets */; };
-		1D523A442628BA2D00997F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */; };
 		1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D45D2628C38200125988 /* GoogleService-Info.plist */; };
+		1DE0D4632628C4F000125988 /* App Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4622628C4F000125988 /* App Logo.json */; };
+		1DE0D4662628C5B700125988 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4652628C5B700125988 /* heart.json */; };
+		1DE0D4692628C98300125988 /* pigeon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4682628C98300125988 /* pigeon.json */; };
+		1DE0D46C2628CB1900125988 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0D46B2628CB1900125988 /* SignViewController.swift */; };
+		1DE0D4712628CDD000125988 /* bunny.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D46F2628CDD000125988 /* bunny.json */; };
+		1DE0D4722628CDD000125988 /* signupBackground.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4702628CDD000125988 /* signupBackground.json */; };
+		1DE0D4752628D53E00125988 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4742628D53E00125988 /* cat.json */; };
+		1DE0D4782628D8F700125988 /* doggy.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4772628D8F700125988 /* doggy.json */; };
+		1DE0D47B2628DE6200125988 /* friends.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D47A2628DE6200125988 /* friends.json */; };
+		1DE0D47E2628E8BC00125988 /* dogFromBox.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D47D2628E8BC00125988 /* dogFromBox.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +34,18 @@
 		1D523A3B2628BA2B00997F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D523A3E2628BA2B00997F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D523A402628BA2D00997F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D523A432628BA2D00997F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D523A452628BA2D00997F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE0D45D2628C38200125988 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DE0D4622628C4F000125988 /* App Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "App Logo.json"; path = "TingTing Messenger/JSON files/App Logo.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D4652628C5B700125988 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heart.json; path = "TingTing Messenger/JSON files/heart.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D4682628C98300125988 /* pigeon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pigeon.json; path = "TingTing Messenger/JSON files/pigeon.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D46B2628CB1900125988 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		1DE0D46F2628CDD000125988 /* bunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bunny.json; path = "JSON assets/bunny.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D4702628CDD000125988 /* signupBackground.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = signupBackground.json; path = "JSON assets/signupBackground.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D4742628D53E00125988 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cat.json; path = "JSON assets/cat.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D4772628D8F700125988 /* doggy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = doggy.json; path = "JSON assets/doggy.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D47A2628DE6200125988 /* friends.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = friends.json; path = "JSON assets/friends.json"; sourceTree = SOURCE_ROOT; };
+		1DE0D47D2628E8BC00125988 /* dogFromBox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dogFromBox.json; path = "JSON assets/dogFromBox.json"; sourceTree = SOURCE_ROOT; };
 		541F91BC73647650C75B2CF8 /* Pods-TingTing Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TingTing Messenger.release.xcconfig"; path = "Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger.release.xcconfig"; sourceTree = "<group>"; };
 		6871ED54A881ABEA765EA1FE /* Pods_TingTing_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TingTing_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,16 +92,33 @@
 		1D523A362628BA2B00997F47 /* TingTing Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				1DE0D46E2628CD9400125988 /* JSON files */,
 				1D523A372628BA2B00997F47 /* AppDelegate.swift */,
 				1D523A392628BA2B00997F47 /* SceneDelegate.swift */,
 				1D523A3B2628BA2B00997F47 /* ViewController.swift */,
 				1D523A3D2628BA2B00997F47 /* Main.storyboard */,
 				1DE0D45D2628C38200125988 /* GoogleService-Info.plist */,
 				1D523A402628BA2D00997F47 /* Assets.xcassets */,
-				1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */,
 				1D523A452628BA2D00997F47 /* Info.plist */,
+				1DE0D46B2628CB1900125988 /* SignViewController.swift */,
 			);
 			path = "TingTing Messenger";
+			sourceTree = "<group>";
+		};
+		1DE0D46E2628CD9400125988 /* JSON files */ = {
+			isa = PBXGroup;
+			children = (
+				1DE0D47D2628E8BC00125988 /* dogFromBox.json */,
+				1DE0D47A2628DE6200125988 /* friends.json */,
+				1DE0D4772628D8F700125988 /* doggy.json */,
+				1DE0D4742628D53E00125988 /* cat.json */,
+				1DE0D46F2628CDD000125988 /* bunny.json */,
+				1DE0D4702628CDD000125988 /* signupBackground.json */,
+				1DE0D4682628C98300125988 /* pigeon.json */,
+				1DE0D4652628C5B700125988 /* heart.json */,
+				1DE0D4622628C4F000125988 /* App Logo.json */,
+			);
+			path = "JSON files";
 			sourceTree = "<group>";
 		};
 		A0D410A6EAC37188A3B4036E /* Frameworks */ = {
@@ -153,10 +188,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D523A442628BA2D00997F47 /* LaunchScreen.storyboard in Resources */,
+				1DE0D4782628D8F700125988 /* doggy.json in Resources */,
+				1DE0D4712628CDD000125988 /* bunny.json in Resources */,
 				1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */,
+				1DE0D4752628D53E00125988 /* cat.json in Resources */,
 				1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */,
+				1DE0D4722628CDD000125988 /* signupBackground.json in Resources */,
+				1DE0D47E2628E8BC00125988 /* dogFromBox.json in Resources */,
 				1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */,
+				1DE0D4692628C98300125988 /* pigeon.json in Resources */,
+				1DE0D4662628C5B700125988 /* heart.json in Resources */,
+				1DE0D4632628C4F000125988 /* App Logo.json in Resources */,
+				1DE0D47B2628DE6200125988 /* friends.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +255,7 @@
 				1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */,
 				1D523A382628BA2B00997F47 /* AppDelegate.swift in Sources */,
 				1D523A3A2628BA2B00997F47 /* SceneDelegate.swift in Sources */,
+				1DE0D46C2628CB1900125988 /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +268,6 @@
 				1D523A3E2628BA2B00997F47 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1D523A422628BA2D00997F47 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D523A432628BA2D00997F47 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
