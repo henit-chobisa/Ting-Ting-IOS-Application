@@ -7,10 +7,20 @@
 
 import UIKit
 import Lottie
+import FirebaseStorage
+import FirebaseFirestore
+import FirebaseAuth
+
 
 class photoPickerViewController: UIViewController, UINavigationControllerDelegate {
+    var fullName : String = ""
+    var phoneNumber : String = ""
+    var age : String = ""
+    var city : String = ""
+    let database = Firestore.firestore()
     var picker = UIImagePickerController()
     @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var flyingcatanimation: AnimationView!
     @IBOutlet weak var launchButton: UIButton!
     @IBOutlet weak var descriptionTextFeild: UITextView!
@@ -35,6 +45,7 @@ class photoPickerViewController: UIViewController, UINavigationControllerDelegat
         
         descriptionTextFeild.layer.cornerRadius = 30
         launchButton.layer.cornerRadius = 20
+        activity.isHidden = true
         
         
         
@@ -55,15 +66,45 @@ class photoPickerViewController: UIViewController, UINavigationControllerDelegat
         present(picker, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        self.dismiss(animated: true)
     }
-    */
+    
+    
+    @IBAction func launchPressed(_ sender: UIButton) {
+        activity.isHidden = false
+        activity.startAnimating()
+        
+        let data = userImageView.image?.jpegData(compressionQuality: 0.7)
+        let imagereference = Storage.storage().reference().child((Auth.auth().currentUser?.email)!).child("Profile Image")
+        imagereference.putData(data!, metadata: nil){ (meta , error) in
+            imagereference.downloadURL { (url, error) in
+                self.helloDatabase(imageurl: url!)
+                
+                
+                
+            }
+        }
+    }
+    
+    
+    func helloDatabase(imageurl : URL){
+        
+        Auth.auth().currentUser?.createProfileChangeRequest().photoURL = imageurl
+        database.collection((Auth.auth().currentUser?.email)!).addDocument(data: ["FullName" : fullName,"PhoneNumber" : phoneNumber,"Age" : age,"City" : city ,"UserImage" : imageurl.absoluteString , "Profile Description" : descriptionTextFeild.text!])
+        activity.stopAnimating()
+        activity.isHidden = true
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+   
 
 }
 

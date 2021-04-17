@@ -54,6 +54,17 @@ class ProfileInformationViewController: UIViewController {
      
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? photoPickerViewController{
+            vc.fullName = fullNameFeild.text!
+            vc.phoneNumber = phoneNumberFeild.text!
+            vc.age = stepperVal.text!
+            vc.city = cityFeild.text!
+            
+        }
+        
+    }
+    
     @IBAction func stepperValueChnaged(_ sender: UIStepper) {
         stepperVal.text = "\(sender.value)"
     }
@@ -62,9 +73,6 @@ class ProfileInformationViewController: UIViewController {
         activity.isHidden = false
         let change = Auth.auth().currentUser?.createProfileChangeRequest()
         change?.displayName = fullNameFeild.text!
-        
-        db.collection((Auth.auth().currentUser?.email)!).addDocument(data: ["FullName" : fullNameFeild.text! , "PhoneNumber" : phoneNumberFeild.text! , "Age" : stepperVal.text! , "City" : cityFeild.text!])
-        
         
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "tophoto", sender: self)
