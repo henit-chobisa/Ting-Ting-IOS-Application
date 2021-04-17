@@ -25,12 +25,6 @@ class ViewController: UIViewController {
         heart.contentMode = .scaleAspectFill
         heart.play()
         
-        
-        
-
-        
-        
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.performSegue(withIdentifier: "toSign", sender: self)
         }

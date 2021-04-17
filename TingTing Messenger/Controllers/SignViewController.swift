@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 import Canvas
+import FirebaseAuth
 
 class SignViewController: UIViewController {
 
@@ -67,6 +68,19 @@ class SignViewController: UIViewController {
 
         
     }
+    
+    
+    @IBAction func logbuttonhitted(_ sender: UIButton) {
+        Auth.auth().signIn(withEmail: emailTextFeild.text!, password: passwordTextFeild.text!) { (result, error) in
+            
+            self.performSegue(withIdentifier: "logtomain", sender: self)
+            
+        }
+        
+    }
+    
+    
+    
     
 
     /*

@@ -17,20 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7a-sf-70x">
-                                <rect key="frame" x="62" y="796" width="75" height="38"/>
+                                <rect key="frame" x="68" y="801" width="75" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fn9-3B-dUo" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="120" y="753" width="99" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="heart"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84d-2T-BsA" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="248" y="401" width="89" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,12 +39,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by Henit Chobisa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bry-Pi-n3N">
-                                <rect key="frame" x="203" y="812" width="160" height="22"/>
+                                <rect key="frame" x="215" y="806" width="146" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DamascusLight" family="Damascus" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fn9-3B-dUo" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="128" y="721" width="99" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="heart"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="-1142.0289855072465" y="162.72321428571428"/>
         </scene>
         <!--Sign View Controller-->
         <scene sceneID="waa-sd-QRs">
@@ -156,10 +156,13 @@
                                         <rect key="frame" x="122" y="450" width="179" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="29"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
                                         <state key="normal" title="Login Now">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logbuttonhitted:" destination="jWe-IL-bcv" eventType="touchUpInside" id="W8i-7n-64S"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cH-aT-NJG">
                                         <rect key="frame" x="157" y="432" width="109" height="1"/>
@@ -217,11 +220,12 @@
                         <outlet property="loginButton" destination="jQB-rW-umw" id="g4Y-8F-xcP"/>
                         <outlet property="mainLogView" destination="fAH-gG-mtj" id="0Lw-Oq-grr"/>
                         <outlet property="passwordTextFeild" destination="wvM-z2-Gqh" id="IlU-Ov-AYi"/>
+                        <segue destination="WT5-PI-5Gj" kind="presentation" identifier="logtomain" id="vUS-b5-Q9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEe-TT-Lm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="252"/>
+            <point key="canvasLocation" x="-26" y="164"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="77X-68-6aO">
@@ -415,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v10-7l-Rd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="949.55357142857133"/>
+            <point key="canvasLocation" x="-1912" y="896"/>
         </scene>
         <!--Profile Information View Controller-->
         <scene sceneID="5Yo-jD-h44">
@@ -606,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5b-e2-NHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757.9710144927537" y="949.55357142857133"/>
+            <point key="canvasLocation" x="-1020" y="896"/>
         </scene>
         <!--Photo Picker View Controller-->
         <scene sceneID="nxd-uG-wgw">
@@ -716,11 +720,68 @@
                         <outlet property="flyingcatanimation" destination="TYq-rE-u59" id="hjm-iM-3AC"/>
                         <outlet property="launchButton" destination="UlS-m7-UuO" id="jht-Bs-yMe"/>
                         <outlet property="userImageView" destination="OPR-lI-n7E" id="jaK-dq-lE5"/>
+                        <segue destination="WT5-PI-5Gj" kind="presentation" identifier="regtomain" id="lFi-7e-Kf0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tL6-Ei-nst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730.434782608696" y="949.55357142857133"/>
+            <point key="canvasLocation" x="-26" y="896"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="yJd-iK-QIg">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fwK-vh-AfO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GH2-MD-pko">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KOq-9A-qIY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.2" catalog="system" id="jGe-ZS-CQx">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ha-cy-dXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475" y="210"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bKc-04-cXf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="WT5-PI-5Gj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="i" id="Jem-9N-h48">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.89390283820000005" green="0.50208663939999998" blue="0.22734543679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9A2-vQ-Gya" kind="relationship" relationship="viewControllers" id="V4Z-PK-Wc9"/>
+                        <segue destination="fwK-vh-AfO" kind="relationship" relationship="viewControllers" id="770-bT-vbx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeS-C6-Ier" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.7971014492755" y="544.41964285714278"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="s2N-wK-7Pt">
+            <objects>
+                <viewController id="9A2-vQ-Gya" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XGq-1n-Bbc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t4K-Fd-H5h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="arrow.triangle.2.circlepath.camera" catalog="system" id="OTg-Zy-bB7">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biz-4g-dtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="1051"/>
         </scene>
     </scenes>
     <designables>
@@ -742,8 +803,14 @@
         <designable name="vzE-u3-oJC"/>
         <designable name="x4V-3Q-G0j"/>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="lFi-7e-Kf0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screenshot 2021-04-17 at 3.01.51 PM" width="1200" height="1114"/>
+        <image name="arrow.triangle.2.circlepath.camera" catalog="system" width="128" height="94"/>
+        <image name="i" width="422" height="91"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="signinBackground" width="273" height="345"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

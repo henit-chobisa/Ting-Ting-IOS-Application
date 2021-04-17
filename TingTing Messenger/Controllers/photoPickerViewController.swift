@@ -82,7 +82,9 @@ class photoPickerViewController: UIViewController, UINavigationControllerDelegat
             imagereference.downloadURL { (url, error) in
                 self.helloDatabase(imageurl: url!)
                 
-                
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "regtomain", sender: self)
+                }
                 
             }
         }
