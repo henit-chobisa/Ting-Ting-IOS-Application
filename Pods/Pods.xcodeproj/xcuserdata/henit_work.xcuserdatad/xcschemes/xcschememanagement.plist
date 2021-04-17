@@ -4,26 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BATabBarController.xcscheme</key>
+		<key>BoringSSL-GRPC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>BoringSSL-GRPC.xcscheme</key>
+		<key>CYLTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Canvas.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
@@ -122,13 +122,6 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>23</integer>
-		</dict>
-		<key>SnapKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>24</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>

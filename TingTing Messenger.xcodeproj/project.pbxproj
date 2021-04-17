@@ -109,16 +109,24 @@
 				1DE0D46E2628CD9400125988 /* JSON files */,
 				1D523A372628BA2B00997F47 /* AppDelegate.swift */,
 				1D523A392628BA2B00997F47 /* SceneDelegate.swift */,
-				1D523A3B2628BA2B00997F47 /* ViewController.swift */,
+				1D76342A262AB73600228634 /* Controllers */,
 				1D523A3D2628BA2B00997F47 /* Main.storyboard */,
 				1DE0D45D2628C38200125988 /* GoogleService-Info.plist */,
 				1D523A402628BA2D00997F47 /* Assets.xcassets */,
 				1D523A452628BA2D00997F47 /* Info.plist */,
+			);
+			path = "TingTing Messenger";
+			sourceTree = "<group>";
+		};
+		1D76342A262AB73600228634 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D523A3B2628BA2B00997F47 /* ViewController.swift */,
 				1DE0D46B2628CB1900125988 /* SignViewController.swift */,
 				1D7045B62629F22B00AE311B /* RegisterViewController.swift */,
 				1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */,
 			);
-			path = "TingTing Messenger";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		1DE0D46E2628CD9400125988 /* JSON files */ = {

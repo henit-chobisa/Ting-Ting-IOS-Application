@@ -15,7 +15,8 @@ target 'TingTing Messenger' do
    pod 'lottie-ios'
    pod 'Canvas'
    pod 'Kingfisher'
-   pod 'BATabBarController'
+   
+   pod 'CYLTabBarController'
    
 
 end

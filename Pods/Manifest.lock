@@ -212,8 +212,6 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - BATabBarController (2.0.2):
-    - SnapKit
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -221,6 +219,9 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
   - Canvas (0.1.2)
+  - CYLTabBarController (1.29.0):
+    - CYLTabBarController/Core (= 1.29.0)
+  - CYLTabBarController/Core (1.29.0)
   - Firebase/Auth (7.10.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 7.10.0)
@@ -319,11 +320,10 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
-  - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - BATabBarController
   - Canvas
+  - CYLTabBarController
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
@@ -335,9 +335,9 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
-    - BATabBarController
     - BoringSSL-GRPC
     - Canvas
+    - CYLTabBarController
     - Firebase
     - FirebaseAuth
     - FirebaseCore
@@ -356,13 +356,12 @@ SPEC REPOS:
     - MessageKit
     - nanopb
     - PromisesObjC
-    - SnapKit
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  BATabBarController: 7f50519b3743b4e779c71a8e147ac9e8c50e0c7d
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
   Firebase: fffddd0bab8677d07376538365faa93ff3889b39
   FirebaseAuth: 675f2c4eb4426e7c58a78a89965a6530e7863535
   FirebaseCore: ec566d917b2195fc2610aeb148dae99f57a788f9
@@ -381,8 +380,7 @@ SPEC CHECKSUMS:
   MessageKit: a8efaf55b021672b19ffdd5a85ce1c2f3b53058e
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: aafddbdc2aba62692db7905cc2bd73ac31e3ff3c
+PODFILE CHECKSUM: 5c3cb68a0caf58c6eb9ae2b0493cf9bd9b1f7142
 
 COCOAPODS: 1.10.0
