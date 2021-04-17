@@ -20,6 +20,7 @@
 		1DBBCC0D262A1EC900914D4D /* google.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0A262A1EC800914D4D /* google.json */; };
 		1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0B262A1EC900914D4D /* appleLogo.json */; };
 		1DBBCC0F262A1EC900914D4D /* facebook.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0C262A1EC900914D4D /* facebook.json */; };
+		1DDEE6DC262AD42400658654 /* catball.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DDEE6DB262AD42400658654 /* catball.json */; };
 		1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D45D2628C38200125988 /* GoogleService-Info.plist */; };
 		1DE0D4632628C4F000125988 /* App Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4622628C4F000125988 /* App Logo.json */; };
 		1DE0D4662628C5B700125988 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4652628C5B700125988 /* heart.json */; };
@@ -49,6 +50,7 @@
 		1DBBCC0A262A1EC800914D4D /* google.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = google.json; path = "JSON assets/google.json"; sourceTree = SOURCE_ROOT; };
 		1DBBCC0B262A1EC900914D4D /* appleLogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = appleLogo.json; path = "JSON assets/appleLogo.json"; sourceTree = SOURCE_ROOT; };
 		1DBBCC0C262A1EC900914D4D /* facebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = facebook.json; path = "JSON assets/facebook.json"; sourceTree = SOURCE_ROOT; };
+		1DDEE6DB262AD42400658654 /* catball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = catball.json; path = "JSON assets/catball.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D45D2628C38200125988 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DE0D4622628C4F000125988 /* App Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "App Logo.json"; path = "TingTing Messenger/JSON files/App Logo.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D4652628C5B700125988 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heart.json; path = "TingTing Messenger/JSON files/heart.json"; sourceTree = SOURCE_ROOT; };
@@ -132,6 +134,7 @@
 		1DE0D46E2628CD9400125988 /* JSON files */ = {
 			isa = PBXGroup;
 			children = (
+				1DDEE6DB262AD42400658654 /* catball.json */,
 				1DBBCC0B262A1EC900914D4D /* appleLogo.json */,
 				1DBBCC0C262A1EC900914D4D /* facebook.json */,
 				1DBBCC0A262A1EC800914D4D /* google.json */,
@@ -220,6 +223,7 @@
 				1D7045B42629F1E800AE311B /* back_button.json in Resources */,
 				1DBBCC0D262A1EC900914D4D /* google.json in Resources */,
 				1DE0D4782628D8F700125988 /* doggy.json in Resources */,
+				1DDEE6DC262AD42400658654 /* catball.json in Resources */,
 				1D7045B12629F03400AE311B /* happy_cat.json in Resources */,
 				1DE0D4712628CDD000125988 /* bunny.json in Resources */,
 				1D523A412628BA2D00997F47 /* Assets.xcassets in Resources */,

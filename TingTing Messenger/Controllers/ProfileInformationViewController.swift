@@ -10,18 +10,22 @@ import Lottie
 
 
 class ProfileInformationViewController: UIViewController {
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var backButtonAnimation: AnimationView!
-    @IBOutlet var registerViewBackground: AnimationView!
+    @IBOutlet weak var catballAnimation: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerViewBackground.loopMode = .playOnce
-        registerViewBackground.contentMode = .scaleAspectFill
+        
         backButtonAnimation.loopMode = .loop
         backButtonAnimation.contentMode = .scaleAspectFill
+        catballAnimation.loopMode = .loop
+        catballAnimation.contentMode = .scaleAspectFit
         
         
         DispatchQueue.main.async {
-            self.registerViewBackground.play()
+     
+            self.catballAnimation.play()
             self.backButtonAnimation.play()
         }
         

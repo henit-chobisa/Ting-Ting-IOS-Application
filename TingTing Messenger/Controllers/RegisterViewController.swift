@@ -7,9 +7,12 @@
 
 import UIKit
 import Lottie
+import FirebaseAuth
+
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var googleAnimation: AnimationView!
     @IBOutlet weak var facebookAnimation: AnimationView!
     @IBOutlet weak var appleAnimation: AnimationView!
@@ -34,6 +37,7 @@ class RegisterViewController: UIViewController {
         
         appleAnimation.loopMode = .loop
         appleAnimation.contentMode = .scaleAspectFill
+        activity.isHidden = true
         
         facebookAnimation.loopMode = .loop
         facebookAnimation.contentMode = .scaleAspectFill
@@ -76,6 +80,20 @@ class RegisterViewController: UIViewController {
     
     @IBAction func backButton(_ sender: UIButton) {
         self.dismiss(animated: true)
+    }
+    @IBAction func nextPressed(_ sender: UIButton) {
+        activity.isHidden = false
+        activity.startAnimating()
+        
+        Auth.auth().createUser(withEmail: emailTextFeild.text!, password: passwordTextFeild.text!) { (result, error) in
+            if error != nil {
+                print("There is an error in signup")
+                
+            }
+            else {
+                self.performSegue(withIdentifier: "toinformation", sender: self)
+            }
+        }
     }
     
     
