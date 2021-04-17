@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "unnamed.jpg",
+      "filename" : "food_unselected.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -19,6 +19,7 @@
     "version" : 1
   },
   "properties" : {
-    "auto-scaling" : "auto"
+    "compression-type" : "automatic",
+    "template-rendering-intent" : "original"
   }
 }

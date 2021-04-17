@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "unnamed.jpg",
+      "filename" : "profile_selected.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -19,6 +19,6 @@
     "version" : 1
   },
   "properties" : {
-    "auto-scaling" : "auto"
+    "template-rendering-intent" : "original"
   }
 }
