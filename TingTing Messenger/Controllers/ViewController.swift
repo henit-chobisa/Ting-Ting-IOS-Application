@@ -11,7 +11,7 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var pigeonView: AnimationView!
+   
     @IBOutlet weak var app_logo: AnimationView!
     @IBOutlet weak var heart: AnimationView!
     
@@ -25,9 +25,7 @@ class ViewController: UIViewController {
         heart.contentMode = .scaleAspectFill
         heart.play()
         
-        pigeonView.loopMode = .loop
-        pigeonView.contentMode = .scaleAspectFill
-        pigeonView.play()
+        
         
 
         

@@ -21,6 +21,8 @@
 		1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0B262A1EC900914D4D /* appleLogo.json */; };
 		1DBBCC0F262A1EC900914D4D /* facebook.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBBCC0C262A1EC900914D4D /* facebook.json */; };
 		1DDEE6DC262AD42400658654 /* catball.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DDEE6DB262AD42400658654 /* catball.json */; };
+		1DDEE6DF262ADD5400658654 /* photoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEE6DE262ADD5400658654 /* photoPickerViewController.swift */; };
+		1DDEE6E2262AE40B00658654 /* flyingcat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DDEE6E1262AE40B00658654 /* flyingcat.json */; };
 		1DE0D45E2628C38200125988 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D45D2628C38200125988 /* GoogleService-Info.plist */; };
 		1DE0D4632628C4F000125988 /* App Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4622628C4F000125988 /* App Logo.json */; };
 		1DE0D4662628C5B700125988 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0D4652628C5B700125988 /* heart.json */; };
@@ -51,6 +53,8 @@
 		1DBBCC0B262A1EC900914D4D /* appleLogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = appleLogo.json; path = "JSON assets/appleLogo.json"; sourceTree = SOURCE_ROOT; };
 		1DBBCC0C262A1EC900914D4D /* facebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = facebook.json; path = "JSON assets/facebook.json"; sourceTree = SOURCE_ROOT; };
 		1DDEE6DB262AD42400658654 /* catball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = catball.json; path = "JSON assets/catball.json"; sourceTree = SOURCE_ROOT; };
+		1DDEE6DE262ADD5400658654 /* photoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoPickerViewController.swift; sourceTree = "<group>"; };
+		1DDEE6E1262AE40B00658654 /* flyingcat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = flyingcat.json; path = "JSON assets/flyingcat.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D45D2628C38200125988 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DE0D4622628C4F000125988 /* App Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "App Logo.json"; path = "TingTing Messenger/JSON files/App Logo.json"; sourceTree = SOURCE_ROOT; };
 		1DE0D4652628C5B700125988 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heart.json; path = "TingTing Messenger/JSON files/heart.json"; sourceTree = SOURCE_ROOT; };
@@ -127,6 +131,7 @@
 				1DE0D46B2628CB1900125988 /* SignViewController.swift */,
 				1D7045B62629F22B00AE311B /* RegisterViewController.swift */,
 				1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */,
+				1DDEE6DE262ADD5400658654 /* photoPickerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		1DE0D46E2628CD9400125988 /* JSON files */ = {
 			isa = PBXGroup;
 			children = (
+				1DDEE6E1262AE40B00658654 /* flyingcat.json */,
 				1DDEE6DB262AD42400658654 /* catball.json */,
 				1DBBCC0B262A1EC900914D4D /* appleLogo.json */,
 				1DBBCC0C262A1EC900914D4D /* facebook.json */,
@@ -232,6 +238,7 @@
 				1DE0D4722628CDD000125988 /* signupBackground.json in Resources */,
 				1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */,
 				1DE0D47E2628E8BC00125988 /* dogFromBox.json in Resources */,
+				1DDEE6E2262AE40B00658654 /* flyingcat.json in Resources */,
 				1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */,
 				1DBBCC0F262A1EC900914D4D /* facebook.json in Resources */,
 				1DE0D4692628C98300125988 /* pigeon.json in Resources */,
@@ -291,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D523A3C2628BA2B00997F47 /* ViewController.swift in Sources */,
+				1DDEE6DF262ADD5400658654 /* photoPickerViewController.swift in Sources */,
 				1D7045B72629F22B00AE311B /* RegisterViewController.swift in Sources */,
 				1D523A382628BA2B00997F47 /* AppDelegate.swift in Sources */,
 				1D7045BA262A107000AE311B /* ProfileInformationViewController.swift in Sources */,
