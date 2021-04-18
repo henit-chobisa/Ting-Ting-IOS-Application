@@ -1,5 +1,5 @@
 //
-//  lookProfileViewController.swift
+//  notificationsViewController.swift
 //  TingTing Messenger
 //
 //  Created by Henit Work on 18/04/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class lookProfileViewController: UIViewController {
+class notificationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,11 +6,31 @@
 //
 
 import UIKit
+import Lottie
+import Kingfisher
+import FirebaseAuth
+import FirebaseFirestore
+import FirebaseStorage
 
 class homeViewController: UIViewController {
 
+    @IBOutlet weak var postAnimation: AnimationView!
+   
+    @IBOutlet weak var messagingAnimation: AnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messagingAnimation.contentMode = .scaleAspectFill
+        messagingAnimation.loopMode = .loop
+        
+        postAnimation.contentMode = .scaleAspectFill
+        postAnimation.loopMode = .loop
+        
+    
+        DispatchQueue.main.async {
+            self.messagingAnimation.play()
+            self.postAnimation.play()
+        }
 
         // Do any additional setup after loading the view.
     }

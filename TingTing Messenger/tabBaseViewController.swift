@@ -9,9 +9,11 @@ import UIKit
 
 class tabBaseViewController: UITabBarController {
 
+    @IBInspectable var defaultIndex: Int = 2
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        selectedIndex = defaultIndex
         // Do any additional setup after loading the view.
     }
     

@@ -95,6 +95,9 @@ class photoPickerViewController: UIViewController, UINavigationControllerDelegat
         
         Auth.auth().currentUser?.createProfileChangeRequest().photoURL = imageurl
         database.collection((Auth.auth().currentUser?.email)!).addDocument(data: ["FullName" : fullName,"PhoneNumber" : phoneNumber,"Age" : age,"City" : city ,"UserImage" : imageurl.absoluteString , "Profile Description" : descriptionTextFeild.text!])
+        
+        database.collection("userList").addDocument(data: ["Email" : (Auth.auth().currentUser?.email)!,"FullName" : fullName,"PhoneNumber" : phoneNumber,"Age" : age,"City" : city ,"UserImage" : imageurl.absoluteString , "Profile Description" : descriptionTextFeild.text!])
+        
         activity.stopAnimating()
         activity.isHidden = true
         
