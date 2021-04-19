@@ -10,7 +10,7 @@ Ting-Ting is an IOS app which is made for you as well as your pets, Ting-Ting pr
 
 ---
 
-[Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%20e9ac7de217dc4bbeab451b4bf7fd44cf/Screen_Recording_2021-04-19_at_2.44.04_PM.mov](Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%20e9ac7de217dc4bbeab451b4bf7fd44cf/Screen_Recording_2021-04-19_at_2.44.04_PM.mov)
+![Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled.png](Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled.png)
 
 ---
 
@@ -27,6 +27,10 @@ Ting-Ting is an IOS app which is made for you as well as your pets, Ting-Ting pr
 ### **Reason 3 :**
 
 - People love to post their pictures on social media with their pets but there is not a proper platform for this specific purpose and for making connections among people by means of their pets.
+
+![Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled%201.png](Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled%201.png)
+
+---
 
 ### **Reason 4 :**
 
