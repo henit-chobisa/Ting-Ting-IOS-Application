@@ -1,4 +1,4 @@
-# Ting-Ting-Media-Platform
+# Ting-Ting [For Pets and You]
 
 ## The Project 
 Ting-Ting is an IOS app which is made for you as well as your pets, Ting-Ting provides you a vast range of network where you can connect with your friends, who have pets.Not only this, If you don't have any pet and you want to adopt one Ting-Ting also helps you to do that with its "Adopt Me" feature, this feature connects you eith the people and the services around you who has animals and want them to be adopted. In our future Vision, you would be submitting each and every document on the app itself and a service person from Ting-Ting will take the pet from the adoption house and will deliver your new member to your doorstep.
