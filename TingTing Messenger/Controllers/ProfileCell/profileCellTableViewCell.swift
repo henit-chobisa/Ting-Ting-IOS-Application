@@ -39,12 +39,17 @@ class profileCellTableViewCell: UITableViewCell {
     }
     
     
+    func del(){
+        print("Element Popped")
+    }
+    
+    
     @IBAction func acceptButtonPressed(_ sender: UIButton) {
         database.collection(email.text!).addDocument(data: ["Email" : (Auth.auth().currentUser?.email)!])
     }
     
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
-        data.remove(at: indexofcell)
+        del()
     }
     
     

@@ -11,5 +11,5 @@ import UIKit
 struct ProfileCell {
     let displayName : String
     let email : String
-    let image : UIImage
+    let imageURL : String
 }
