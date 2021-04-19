@@ -13,6 +13,7 @@ import FirebaseStorage
 
 class profileCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var backGroundImage: UIImageView!
     var data : [ProfileCell] = []
     var database = Firestore.firestore()
     var indexofcell : Int = 0
@@ -46,6 +47,9 @@ class profileCellTableViewCell: UITableViewCell {
     
     @IBAction func acceptButtonPressed(_ sender: UIButton) {
         database.collection(email.text!).addDocument(data: ["Email" : (Auth.auth().currentUser?.email)!])
+        backGroundImage.image = UIImage(named: "profileRequestSent")
+        email.text = "Request Sent!"
+        
     }
     
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
