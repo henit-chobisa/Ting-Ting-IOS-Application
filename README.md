@@ -10,16 +10,16 @@ Ting-Ting also has a online store for providing the best quality food, toys, sha
 ## Why Ting-Ting?
 
 ### Reason 1 : 
-Many People want to adopt pets but they couldn't treat them the way they should be treated, Animals are different they can't say or explain anyone what they are feeling and ultimately, if they don't get a good care, medication and food, they fall sick or die.
+- Many People want to adopt pets but they couldn't treat them the way they should be treated, Animals are different they can't say or explain anyone what they are feeling and ultimately, if they don't get a good care, medication and food, they fall sick or die.
 
 ### Reason 2 : 
-People want to adopt a pet but they don't know how!, They have to struggle for getting a pet and that also doesn't ensure good health services and they don't provide good knowledge about the pet. With Ting-Ting you get the pet at your door-step with clinic, vet, forums etc. services.
+- People want to adopt a pet but they don't know how!, They have to struggle for getting a pet and that also doesn't ensure good health services and they don't provide good knowledge about the pet. With Ting-Ting you get the pet at your door-step with clinic, vet, forums etc. services.
 
 ### Reason 3 : 
-People love to post their pictures on social media with their pets but there is not a proper platform for this specific purpose and for making connections among people by means of their pets.
+- People love to post their pictures on social media with their pets but there is not a proper platform for this specific purpose and for making connections among people by means of their pets.
 
 ### Reason 4 : 
-Usually Vets are not available so easily and you keep on struggling finding a vet for your pet and for small problems like low energy of one's pets people generally  don't even try to consult vet, they tend to ignore the problem considering it a small one.
+- Usually Vets are not available so easily and you keep on struggling finding a vet for your pet and for small problems like low energy of one's pets people generally  don't even try to consult vet, they tend to ignore the problem considering it a small one.
 
 ### Reason 5 : 
-People around are struggling for good quality food and accessories for their pets, there are very less shops out there and whatever shops are there, they also provide high profit and low quality food due to low demand [Becuase of limited approach].
+- People around are struggling for good quality food and accessories for their pets, there are very less shops out there and whatever shops are there, they also provide high profit and low quality food due to low demand [Becuase of limited approach].
