@@ -10,7 +10,7 @@ Ting-Ting is an IOS app which is made for you as well as your pets, Ting-Ting pr
 
 ---
 
-<img align="left" width="270" height="530" src="https://github.com/HENIT0885/Ting-Ting/blob/2aa694398a73a82fc5e83f1600f23422499e1fc9/Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled.png">
+<img align="left" width="270" height="510" src="https://github.com/HENIT0885/Ting-Ting/blob/48162595cfb4614061bd176b7a8c1c2df8a90f59/Ting-Ting%20-%20You%20%E2%9D%A4%EF%B8%8F%20Your%20Pets!%20%F0%9F%90%95%209c22396b126b4adc928df831de77cd37/Untitled%201.png">
 
 
 ---
