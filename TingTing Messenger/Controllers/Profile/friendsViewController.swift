@@ -42,6 +42,7 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
         searchTextField.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
             if let text = textField.text {
                      if string.count == 0 {
@@ -51,9 +52,6 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
                      }
                      
                  }
-        
-        
-        
         
         return true
     }
@@ -74,11 +72,12 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    
-    
     func loadUsers(){
-        if segmentor.selectedSegmentIndex == 0{
+        if segmentor.selectedSegmentIndex == 0
+        {
+            filtereddata = []
             users = []
+            filtered = false
             database.collection("userList").addSnapshotListener { (query, error) in
                 let data = query?.documents
                 for doc in data! {
@@ -91,11 +90,14 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
                 }
                 self.usersTableView.reloadData()
             }
-            
         }
-        else if segmentor.selectedSegmentIndex == 1{
+        
+        else if segmentor.selectedSegmentIndex == 1
+        {
             users = []
-            database.collection((Auth.auth().currentUser?.email)!).document("UserFriends").collection("Friemd").addSnapshotListener { (query, error) in
+            filtereddata = []
+            filtered = false
+            database.collection((Auth.auth().currentUser?.email)!).document("UserFriends").collection("Friend").addSnapshotListener { (query, error) in
                 if let data = query?.documents{
                     for doc in data {
                         if let displayName = doc["FullName"] as? String ,let email = doc["Email"] as? String, let image = doc["UserImage"] as? String {
@@ -103,49 +105,164 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
                             self.users.append(pod)
                         }
                     }
+                    self.usersTableView.reloadData()
                 }
-                self.usersTableView.reloadData()
+                
             }
-            
         }
         
-       
         
+        else {
+            users = []
+            filtereddata = []
+            filtered = false
+            database.collection((Auth.auth().currentUser?.email)!).document("Requests").collection("Request").addSnapshotListener { (query, error) in
+                if let data = query?.documents{
+                    for doc in data {
+                        if let email = doc["Email"] as? String {
+                        
+                            self.database.collection(email).addSnapshotListener { (query2, error2) in
+                                let data2 = query2!.documents
+                                for doc in data2{
+                                    let displayName2 = doc["FullName"] as! String
+                                    let email2 = email
+                                    let image2 = doc["UserImage"] as! String
+                                 
+                                    let pod = ProfileCell.init(displayName: displayName2, email: email2, imageURL: image2)
+                                    self.users.append(pod)
+                                }
+                                self.usersTableView.reloadData()
+                               
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
     }
     
     
     @IBAction func segmentorChanged(_ sender: UISegmentedControl) {
+        
         loadUsers()
+        usersTableView.reloadData()
+        
+        
     }
 
 }
 
 extension friendsViewController : UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if !filtereddata.isEmpty {
             return filtereddata.count
         }
         return filtered ? 0 : users.count
     }
+    
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = usersTableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! profileCellTableViewCell
-        if !filtereddata.isEmpty{
-            cell.indexofcell = indexPath.row
-            cell.displayName.text = filtereddata[indexPath.row].displayName
-            cell.email.text = filtereddata[indexPath.row].email
-            let resourse = ImageResource(downloadURL: URL(string: filtereddata[indexPath.row].imageURL)!)
-            cell.profileImage.kf.setImage(with: resourse)
+        cell.indexp = indexPath
+        cell.table = usersTableView
+        
+        if segmentor.selectedSegmentIndex == 1
+        {
+            if !filtereddata.isEmpty
+            {
+                cell.acceptAnimationView.isHidden = true
+                cell.deleteAnimation.isHidden = true
+                cell.indexofcell = indexPath.row
+                cell.displayName.text = filtereddata[indexPath.row].displayName
+                cell.email.text = filtereddata[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: filtereddata[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
+            else
+            {
+                cell.acceptAnimationView.isHidden = true
+                cell.deleteAnimation.isHidden = true
+                cell.indexofcell = indexPath.row
+                cell.displayName.text = users[indexPath.row].displayName
+                cell.email.text = users[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: users[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
             
         }
-        else{
-            cell.indexofcell = indexPath.row
-            cell.displayName.text = users[indexPath.row].displayName
-            cell.email.text = users[indexPath.row].email
-            let resourse = ImageResource(downloadURL: URL(string: users[indexPath.row].imageURL)!)
-            cell.profileImage.kf.setImage(with: resourse)
+        else if segmentor.selectedSegmentIndex == 2
+        {
+            if !filtereddata.isEmpty
+            {
+                cell.switchConstant = 1
+                cell.acceptAnimationView.isHidden = false
+                cell.deleteAnimation.isHidden = false
+                cell.acceptAnimationView.animation = Animation.named("requestAccepted")
+                cell.indexofcell = indexPath.row
+                cell.acceptAnimationView.play()
+                cell.deleteAnimation.play()
+                cell.displayName.text = filtereddata[indexPath.row].displayName
+                cell.email.text = filtereddata[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: filtereddata[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
+            else
+            {
+                cell.acceptAnimationView.isHidden = false
+                cell.deleteAnimation.isHidden = false
+                cell.switchConstant = 1
+                cell.acceptAnimationView.animation = Animation.named("requestAccepted")
+                cell.acceptAnimationView.play()
+                cell.deleteAnimation.play()
+                cell.indexofcell = indexPath.row
+                cell.displayName.text = users[indexPath.row].displayName
+                cell.email.text = users[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: users[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
             
         }
+        
+        else
+        {
+            if !filtereddata.isEmpty
+            {
+                cell.acceptAnimationView.isHidden = false
+                cell.deleteAnimation.isHidden = false
+                cell.acceptAnimationView.animation = Animation.named("plus")
+                cell.acceptAnimationView.play()
+                cell.deleteAnimation.play()
+                cell.indexofcell = indexPath.row
+                cell.displayName.text = filtereddata[indexPath.row].displayName
+                cell.email.text = filtereddata[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: filtereddata[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
+            else
+            {
+                cell.acceptAnimationView.isHidden = false
+                cell.deleteAnimation.isHidden = false
+                cell.acceptAnimationView.animation = Animation.named("plus")
+                cell.acceptAnimationView.play()
+                cell.deleteAnimation.play()
+                cell.indexofcell = indexPath.row
+                cell.displayName.text = users[indexPath.row].displayName
+                cell.email.text = users[indexPath.row].email
+                let resourse = ImageResource(downloadURL: URL(string: users[indexPath.row].imageURL)!)
+                cell.profileImage.kf.setImage(with: resourse)
+                
+            }
+            
+        }
+    
         
         return cell
     }

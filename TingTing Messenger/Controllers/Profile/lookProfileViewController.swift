@@ -15,6 +15,8 @@ import Kingfisher
 
 class lookProfileViewController: UIViewController {
 
+    @IBOutlet weak var requestAnimation: AnimationView!
+    @IBOutlet weak var RequestButton: UIButton!
     @IBOutlet weak var bellAnimation: AnimationView!
     @IBOutlet weak var addFriendAnimation: AnimationView!
     let db = Firestore.firestore()
@@ -33,12 +35,20 @@ class lookProfileViewController: UIViewController {
         bellAnimation.contentMode = .scaleAspectFill
         bellAnimation.loopMode = .loop
         bellAnimation.play()
+        
+        RequestButton.layer.cornerRadius = 20
+        
+        requestAnimation.contentMode = .scaleAspectFill
+        requestAnimation.loopMode = .loop
+        requestAnimation.play()
     
         
         
         profileImage.layer.cornerRadius = 110/2
         profileImage.layer.borderWidth = 1
         profileImage.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        
         
         
         
@@ -58,5 +68,10 @@ class lookProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func requestLoader(_ sender: UIButton) {
+    }
+    
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		127FB11E166FE3E563F7282D /* Pods_TingTing_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6871ED54A881ABEA765EA1FE /* Pods_TingTing_Messenger.framework */; };
+		1D088733262DCAD5008895BA /* request.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D088732262DCAD5008895BA /* request.json */; };
 		1D4D1E28262CB3CC008B4045 /* profileCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D1E26262CB3CC008B4045 /* profileCellTableViewCell.swift */; };
 		1D4D1E29262CB3CC008B4045 /* profileCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D1E27262CB3CC008B4045 /* profileCellTableViewCell.xib */; };
 		1D4D1E2C262CB3EF008B4045 /* profileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D1E2B262CB3EF008B4045 /* profileCell.swift */; };
@@ -28,6 +29,7 @@
 		1D7045B42629F1E800AE311B /* back_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D7045B32629F1E800AE311B /* back_button.json */; };
 		1D7045B72629F22B00AE311B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7045B62629F22B00AE311B /* RegisterViewController.swift */; };
 		1D7045BA262A107000AE311B /* ProfileInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */; };
+		1D8DC412262F5B5A00DC9655 /* requestAccepted.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D8DC411262F5B5900DC9655 /* requestAccepted.json */; };
 		1DACF588262C9D670059B196 /* add_friend.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DACF587262C9D660059B196 /* add_friend.json */; };
 		1DACF58B262C9F970059B196 /* bellAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DACF58A262C9F970059B196 /* bellAnimation.json */; };
 		1DACF58E262CA5790059B196 /* friendships.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DACF58D262CA5790059B196 /* friendships.json */; };
@@ -56,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		164D8B92496B6F182C085A4D /* Pods-TingTing Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TingTing Messenger.debug.xcconfig"; path = "Target Support Files/Pods-TingTing Messenger/Pods-TingTing Messenger.debug.xcconfig"; sourceTree = "<group>"; };
+		1D088732262DCAD5008895BA /* request.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request.json; path = "JSON assets/request.json"; sourceTree = SOURCE_ROOT; };
 		1D4D1E26262CB3CC008B4045 /* profileCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCellTableViewCell.swift; sourceTree = "<group>"; };
 		1D4D1E27262CB3CC008B4045 /* profileCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = profileCellTableViewCell.xib; sourceTree = "<group>"; };
 		1D4D1E2B262CB3EF008B4045 /* profileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCell.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		1D7045B32629F1E800AE311B /* back_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = back_button.json; path = "JSON assets/back_button.json"; sourceTree = SOURCE_ROOT; };
 		1D7045B62629F22B00AE311B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1D7045B9262A107000AE311B /* ProfileInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationViewController.swift; sourceTree = "<group>"; };
+		1D8DC411262F5B5900DC9655 /* requestAccepted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = requestAccepted.json; path = "JSON assets/requestAccepted.json"; sourceTree = SOURCE_ROOT; };
 		1DACF587262C9D660059B196 /* add_friend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = add_friend.json; path = "JSON assets/add_friend.json"; sourceTree = SOURCE_ROOT; };
 		1DACF58A262C9F970059B196 /* bellAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bellAnimation.json; path = "JSON assets/bellAnimation.json"; sourceTree = SOURCE_ROOT; };
 		1DACF58D262CA5790059B196 /* friendships.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = friendships.json; path = "JSON assets/friendships.json"; sourceTree = SOURCE_ROOT; };
@@ -202,6 +206,8 @@
 		1DE0D46E2628CD9400125988 /* JSON files */ = {
 			isa = PBXGroup;
 			children = (
+				1D8DC411262F5B5900DC9655 /* requestAccepted.json */,
+				1D088732262DCAD5008895BA /* request.json */,
 				1D4D1E33262CB77D008B4045 /* trashCan.json */,
 				1D4D1E30262CB713008B4045 /* plus.json */,
 				1DACF58D262CA5790059B196 /* friendships.json */,
@@ -313,7 +319,9 @@
 				1D4D1E31262CB714008B4045 /* plus.json in Resources */,
 				1DBBCC0E262A1EC900914D4D /* appleLogo.json in Resources */,
 				1DE0D47E2628E8BC00125988 /* dogFromBox.json in Resources */,
+				1D088733262DCAD5008895BA /* request.json in Resources */,
 				1DACF58B262C9F970059B196 /* bellAnimation.json in Resources */,
+				1D8DC412262F5B5A00DC9655 /* requestAccepted.json in Resources */,
 				1D4D1E29262CB3CC008B4045 /* profileCellTableViewCell.xib in Resources */,
 				1DDEE6E2262AE40B00658654 /* flyingcat.json in Resources */,
 				1D523A3F2628BA2B00997F47 /* Main.storyboard in Resources */,

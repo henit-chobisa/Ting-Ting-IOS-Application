@@ -845,10 +845,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="89H-km-NqC">
-                                <rect key="frame" x="18" y="359" width="376" height="454"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7j-wC-SWn">
+                                <rect key="frame" x="167" y="425" width="89" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="89H-km-NqC">
+                                <rect key="frame" x="18" y="455" width="376" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vce-sj-WqT">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -898,6 +906,27 @@
                                     <segue destination="Waf-3Y-mEj" kind="presentation" id="CSb-og-CjJ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qul-ZJ-L0u" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="279" y="340" width="97" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="request"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbA-A8-qsJ">
+                                <rect key="frame" x="122" y="349" width="171" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
+                                <state key="normal" title="Connections">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestLoader:" destination="fwK-vh-AfO" eventType="touchUpInside" id="eAi-oh-3bz"/>
+                                    <segue destination="Bgj-aH-kKW" kind="presentation" id="x9Q-0o-GzZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KOq-9A-qIY"/>
                         <color key="backgroundColor" red="0.89411764709999997" green="0.50196078430000002" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -910,6 +939,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="RequestButton" destination="YbA-A8-qsJ" id="2wy-yh-VJV"/>
                         <outlet property="addFriendAnimation" destination="3Bh-Lx-7um" id="yBL-R0-cFe"/>
                         <outlet property="bellAnimation" destination="ToX-cT-aAH" id="OIR-EE-ckX"/>
                         <outlet property="connections" destination="grT-UT-EpH" id="Bao-op-wCG"/>
@@ -917,6 +947,7 @@
                         <outlet property="posts" destination="YCc-Qh-tAX" id="jSH-PE-aP7"/>
                         <outlet property="profileDescription" destination="Rwk-P4-sM6" id="wFm-OC-SOI"/>
                         <outlet property="profileImage" destination="VZA-Hk-lKI" id="cEm-LE-PT4"/>
+                        <outlet property="requestAnimation" destination="Qul-ZJ-L0u" id="pXF-zm-3LF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ha-cy-dXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -948,6 +979,7 @@
                                 <segments>
                                     <segment title="Add New Friend"/>
                                     <segment title="My Connections"/>
+                                    <segment title="Requests"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentorChanged:" destination="Bgj-aH-kKW" eventType="valueChanged" id="qcx-VN-yFe"/>
@@ -986,7 +1018,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvL-9n-MWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3402.898550724638" y="-1061.3839285714284"/>
+            <point key="canvasLocation" x="3991" y="-1168"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="kbn-Kf-m4j">
@@ -1136,6 +1168,7 @@
         <designable name="KAN-cj-rVJ"/>
         <designable name="KB8-ud-Bdl"/>
         <designable name="N2g-P0-sHv"/>
+        <designable name="Qul-ZJ-L0u"/>
         <designable name="StG-ML-8ei"/>
         <designable name="TYq-rE-u59"/>
         <designable name="ToX-cT-aAH"/>
@@ -1150,6 +1183,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="lFi-7e-Kf0"/>
+        <segue reference="x9Q-0o-GzZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="230-2309272_png-face-transparent-images-transparent-background-male-avatar.png" width="210" height="226"/>
