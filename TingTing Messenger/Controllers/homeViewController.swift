@@ -11,10 +11,12 @@ import Kingfisher
 import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
+import UserNotifications
 
-class homeViewController: UIViewController {
+class homeViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     @IBOutlet weak var postAnimation: AnimationView!
+    var notificationCenter = UNUserNotificationCenter.current()
    
     @IBOutlet weak var messagingAnimation: AnimationView!
     override func viewDidLoad() {
@@ -25,6 +27,30 @@ class homeViewController: UIViewController {
         
         postAnimation.contentMode = .scaleAspectFill
         postAnimation.loopMode = .loop
+       
+        notificationCenter.requestAuthorization(options: [.alert , .sound ]) { (success, error) in
+            if success {
+                print("Notification Permission Garanted")
+            }
+        }
+        
+        notificationCenter.delegate = self
+        let content = UNMutableNotificationContent()
+        content.body = "This is a Test Notification"
+        content.title = "Test Notification"
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let identifier = "Main Identifier"
+        let request = UNNotificationRequest.init(identifier: identifier, content: content, trigger: trigger)
+        notificationCenter.add(request) { (error) in
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+        }
+        
+
+        
         
     
         DispatchQueue.main.async {
@@ -34,16 +60,8 @@ class homeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert , .sound])
     }
-    */
-
+    
 }

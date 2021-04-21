@@ -11,8 +11,9 @@ import FirebaseStorage
 import FirebaseFirestore
 import FirebaseAuth
 import Kingfisher
+import UserNotifications
 
-class friendsViewController: UIViewController, UITextFieldDelegate {
+class friendsViewController: UIViewController, UITextFieldDelegate, UNUserNotificationCenterDelegate {
     var users : [ProfileCell] = []
     var filtereddata : [ProfileCell] = []
     var filtered = false
@@ -23,24 +24,29 @@ class friendsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchTextField: UITextField!
     
     let database = Firestore.firestore()
+    let center = UNUserNotificationCenter.current()
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadUsers()
         
+        
         friendAnimationView.contentMode = .scaleAspectFit
         friendAnimationView.loopMode = .loop
         friendAnimationView.play()
-//        usersTableView.delegate = self
+        
+        center.delegate = self
+
         usersTableView.dataSource = self
         searchTextField.delegate = self
         usersTableView.register(UINib.init(nibName: "profileCellTableViewCell", bundle: nil), forCellReuseIdentifier: "profileCell")
         
+        
 
         usersTableView.rowHeight = 80
         searchTextField.layer.cornerRadius = 20
-        // Do any additional setup after loading the view.
+       
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
