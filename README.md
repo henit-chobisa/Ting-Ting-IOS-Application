@@ -1,4 +1,4 @@
-# Ting-Ting - You ❤️ Your Pets! 🐕
+# Ting-Ting - We ❤️ Your Pets! 🐕
 
 ---
 
