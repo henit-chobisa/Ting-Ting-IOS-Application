@@ -9,6 +9,7 @@ import UIKit
 
 class notificationsViewController: UIViewController {
 
+    @IBOutlet weak var mainTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

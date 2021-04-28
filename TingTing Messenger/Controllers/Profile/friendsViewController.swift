@@ -138,12 +138,9 @@ class friendsViewController: UIViewController, UITextFieldDelegate, UNUserNotifi
                                     self.users.append(pod)
                                 }
                                 self.usersTableView.reloadData()
-                               
                             }
                         }
-                        
                     }
-                    
                 }
             }
         }

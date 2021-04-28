@@ -25,6 +25,13 @@ class lookProfileViewController: UIViewController {
     @IBOutlet weak var connections: UILabel!
     @IBOutlet weak var profileDescription: UILabel!
     @IBOutlet weak var nameLable: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.addFriendAnimation.play()
+        self.bellAnimation.play()
+        self.requestAnimation.play()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -19,6 +19,13 @@ class homeViewController: UIViewController, UNUserNotificationCenterDelegate {
     var notificationCenter = UNUserNotificationCenter.current()
    
     @IBOutlet weak var messagingAnimation: AnimationView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.messagingAnimation.play()
+        self.postAnimation.play()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
